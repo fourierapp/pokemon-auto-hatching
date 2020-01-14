@@ -16,4 +16,4 @@
 # 参考にさせていただいた先駆者様方
 * https://github.com/bertrandom/snowball-thrower
 * [NintendoSwitchをPCから操作する](https://blog.feelmy.net/control-nintendo-switch-from-computer/)
-* [ギアのかけらやチケットを無限に入手！Switch操作自動化のススメ【Splatoon2】]（https://qiita.com/Anaakikutsushit/items/b50b092c5ec43d83808a）
+* [ギアのかけらやチケットを無限に入手！Switch操作自動化のススメ【Splatoon2】](https://qiita.com/Anaakikutsushit/items/b50b092c5ec43d83808a)
