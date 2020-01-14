@@ -68,8 +68,8 @@ static const command step[] = {
 	/* 受け取り開始 */
 	{A, 20},
 	{NOTHING, 20},
-	{A, 20},
-	{NOTHING, 20},
+	// {A, 20}, // 英語版だと1回少ない
+	// {NOTHING, 20},
 	{A, 20},
 	{NOTHING, 100},
 	{A, 20},
