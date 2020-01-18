@@ -50,22 +50,14 @@ typedef struct
 } command;
 
 static const command step[] = {
-	// 預かり屋の建物からでる
-	{L_DOWN, 20},
-	{NOTHING, 100},
-
-	// 預かり屋に突っ込んでずれるのを回避するため下に少しオフセット
-	{L_DOWN, 10},
-	{NOTHING, 50},
-
-	// 預かりやの前まで移動
-	{L_LEFT, 21},
-	{NOTHING, 50},
+	// 預かり屋の右まで移動
+	{L_LEFT, 18},
+	{L_UP, 8},
+	{NOTHING, 10},
+	{L_LEFT, 2},
+	{NOTHING, 20},
 
 	// 話しかける
-	{L_UP, 11},
-	{NOTHING, 50},
-	/* 受け取り開始 */
 	{A, 20},
 	{NOTHING, 20},
 	// {A, 20}, // 英語版だと1回少ない
@@ -83,33 +75,28 @@ static const command step[] = {
 	{NOTHING, 50},
 
 	// 方向転換して自転車に乗る
-	{L_RIGHT, 20},
-	{NOTHING, 50},
+	{L_RIGHT, 2},
+	{NOTHING, 20},
 	{PLUS, 20},
 	{NOTHING, 20},
 
 	// 右行って自転車から降りる
 	{L_RIGHT, 700},
-	{NOTHING, 50},
+	{NOTHING, 20},
 	{PLUS, 20},
 	{NOTHING, 20},
 
-	// 方向転換して自転車に乗る
-	{L_LEFT, 20},
+	// 空を飛ぶ
+	{X, 20},
 	{NOTHING, 50},
-	{PLUS, 20},
+	{A, 20},
+	{NOTHING, 100},
+	{L_UP, 1},
+	{L_RIGHT, 1},
 	{NOTHING, 20},
-
-	// 左行って自転車から降りる
-	{L_LEFT, 700},
-	{NOTHING, 50},
-	{PLUS, 20},
+	{A, 20},
 	{NOTHING, 20},
-
-	// 預かり屋の建物に入る
-	{L_RIGHT, 21},
-	{NOTHING, 50},
-	{L_UP, 45},
+	{A, 20},
 	{NOTHING, 100},
 };
 
