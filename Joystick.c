@@ -52,7 +52,7 @@ typedef struct
 static const command step[] = {
 	// 預かり屋の右まで移動
 	{L_LEFT, 18},
-	{L_UP, 8},
+	{L_UP, 15},
 	{NOTHING, 10},
 	{L_LEFT, 2},
 	{NOTHING, 20},
@@ -72,7 +72,7 @@ static const command step[] = {
 	{NOTHING, 20},
 	/* 受け取り終了 */
 	{L_DOWN, 30},
-	{NOTHING, 50},
+	{NOTHING, 20},
 
 	// 方向転換して自転車に乗る
 	{L_RIGHT, 2},
@@ -81,7 +81,7 @@ static const command step[] = {
 	{NOTHING, 20},
 
 	// 右行って自転車から降りる
-	{L_RIGHT, 700},
+	{L_RIGHT, 750},
 	{NOTHING, 20},
 	{PLUS, 20},
 	{NOTHING, 20},
