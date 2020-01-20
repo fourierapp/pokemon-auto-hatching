@@ -81,7 +81,19 @@ static const command step[] = {
 	{NOTHING, 20},
 
 	// 右行って自転車から降りる
-	{L_RIGHT, 750},
+	{L_RIGHT, 700},
+	{NOTHING, 20},
+	{PLUS, 20},
+	{NOTHING, 20},
+
+	// 方向転換して自転車に乗る
+	{L_LEFT, 2},
+	{NOTHING, 20},
+	{PLUS, 20},
+	{NOTHING, 20},
+
+	// 左行って自転車から降りる
+	{L_LEFT, 700},
 	{NOTHING, 20},
 	{PLUS, 20},
 	{NOTHING, 20},
